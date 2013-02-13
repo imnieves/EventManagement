@@ -1,4 +1,6 @@
 Eventmanager::Application.routes.draw do
+  resources :contests
+
   resources :venues
 
   resources :meetings
