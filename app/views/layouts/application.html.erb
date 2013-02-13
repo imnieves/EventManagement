@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Management</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container">
+	<div id="header">
+		<h1>
+			Event Management
+		</h1>
+	</div>
+	<div id="navigation">
+
+		<%= link_to 'Exhibitors', exhibitors_path %>
+		<%= link_to 'Sponsors', sponsors_path %>
+		<%= link_to 'Meetings', meetings_path %>
+		<%= link_to 'Venues', venues_path %>
+		<%= link_to 'Exhibitor Categories', exhibitor_categories_path %>
+
+	</div>
+	<div id="content">
+
+<%= yield %>
+
+	</div>
+	<div id="footer">
+		Copyright 2013, Event Manager System, Inc.
+	</div>
+</div>
+
+</body>
+</html>
